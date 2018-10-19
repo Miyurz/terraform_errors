@@ -3,7 +3,15 @@
 	
 Possible fix: https://stackoverflow.com/questions/13898057/aws-error-message-a-conflicting-conditional-operation-is-currently-in-progress#16553056
 
+
 #2. Error putting S3 replication configuration: InvalidRequest: Destination bucket must be in a different region than source bucket.  
 
 Possible Fix: Check if your destination bucket is in the same region as the replication one. If so, you may want to change it.
               - Run a tf destroy if tf apply doesn't work out[It worked in my case]. Eg: tf destroy --auto-approve
+	      
+
+#3. aws_s3_bucket.destination: Error putting S3 versioning: AccessDenied: No AWSAccessKey was presented.
+Posible fix: ??
+
+
+#4. aws_s3_bucket.destination: aws_s3_bucket.destination: error reading S3 Bucket (helm-doxel-original): Forbidden: Forbidden
