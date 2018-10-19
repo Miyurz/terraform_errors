@@ -14,4 +14,4 @@ Possible Fix: Check if your destination bucket is in the same region as the repl
 Posible fix: ??
 
 
-#4. aws_s3_bucket.destination: aws_s3_bucket.destination: error reading S3 Bucket (helm-doxel-original): Forbidden: Forbidden
+#4. aws_s3_bucket.destination: aws_s3_bucket.destination: error reading S3 Bucket : Forbidden: Forbidden
