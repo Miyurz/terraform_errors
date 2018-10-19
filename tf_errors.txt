@@ -1,4 +1,8 @@
 #1. aws_s3_bucket.destination: Error creating S3 bucket: Error creating S3 bucket helm-doxel, retrying: OperationAborted: A conflicting conditional operation is currently in progress against this resource. Please try again.
 	status code: 409, request id: F6317DC040734175, host id: AvfYGp5G5EHp0qNrzJTzPHSuOfiFhPXLUjMVvkg7aTeQxDEg7VGvGM0kqV/Rrsox30j7JxbQFAw=
+	
+Possible fix: https://stackoverflow.com/questions/13898057/aws-error-message-a-conflicting-conditional-operation-is-currently-in-progress#16553056
 
 #2. Error putting S3 replication configuration: InvalidRequest: Destination bucket must be in a different region than source bucket.  
+
+Possible Fix: Check if your destination bucket is in the same region as the replication one. If so, you may wnat to change it.
