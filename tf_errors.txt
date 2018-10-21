@@ -15,3 +15,7 @@ Posible fix: ??
 
 
 #4. aws_s3_bucket.destination: aws_s3_bucket.destination: error reading S3 Bucket : Forbidden: Forbidden
+
+
+#5. error reading S3 Bucket (helm-doxel-0r1g1n4l): BadRequest: Bad Request
+Poosible fix: Are you using terrafdorm workspaces? If yes, this error may be resulting because of using default or incoorect workspace. I switched from default to the required workspace and it worked!
